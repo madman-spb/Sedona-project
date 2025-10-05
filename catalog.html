@@ -174,23 +174,21 @@
         <legend class="form-filter-group-title">
           Стоимость,₽:
         </legend>
-        <label class="visually-hidden">
-          укажите минимальную стоимость
+        <label class="visually-hidden" for="form-filter-input-min-price">укажите минимальную стоимость</label>
           <input class="min-price"
                  type="number"
                  name="min-price"
                  placeholder="от"
+                 id="form-filter-input-min-price"
 
           />
-        </label>
-        <label class="visually-hidden">
-          укажите максимальную стоимость
+        <label class="visually-hidden" for="form-filter-input-max-price">укажите максимальную стоимость</label>
           <input class="max-price"
                  type="number"
                  name="max-price"
                  placeholder="до"
+                 id="form-filter-input-max-price"
           />
-        </label>
       </fieldset>
       <button class="button-all button-apply"
               type="submit"
@@ -212,6 +210,12 @@
       >
         <option value="Сначала дорогие">
           Сначала дорогие
+        </option>
+        <option value="Сначала дорогие">
+          Сначала дешевые
+        </option>
+        <option value="Сначала дорогие">
+          Сначала популярные
         </option>
       </select>
       <ul class="view-filter-list">
@@ -400,16 +404,15 @@
           action="https://echo.htmlacademy.ru/"
           method="post"
     >
-      <label class="visually-hidden">
-        Укажите ваш email
+      <label class="visually-hidden" for="subscribe-form-input">Укажите ваш email</label>
         <input
           class="input-email"
           type="email"
           name="email-subscribe-form"
           placeholder="Ваш e-mail"
           required="required"
+          id="subscribe-form-input"
         />
-      </label>
       <button class="button-all button-subscribe"
               type="submit"
       >
@@ -423,21 +426,21 @@
   <address class="social">
     <ul class="social-list">
       <li class="social-item">
-        <a class="social-link"
+        <a class="social-link-vk"
            href="https://vk.com/htmlacademy"
         >
           <span class="visually-hidden">Перейти в Вконтакте</span>
         </a>
       </li>
       <li class="social-item">
-        <a class="social-link"
+        <a class="social-link-telegram"
            href="https://t.me/htmlacademy"
         >
           <span class="visually-hidden">Перейти в Телеграм</span>
         </a>
       </li>
       <li class="social-item">
-        <a class="social-link"
+        <a class="social-link-youtube"
            href="https://www.youtube.com/user/htmlacademyru"
         >
           <span class="visually-hidden">Перейти в Ютуб</span>

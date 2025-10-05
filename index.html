@@ -73,7 +73,7 @@
         <a class="navigation-link"
            href="#"
         >
-          <span class="visually-hidden">Гостиниц в избранном</span>
+          <span class="visually-hidden">Гостиниц в избранном:</span>
           <span class="count">12</span>
         </a>
       </li>
@@ -188,16 +188,18 @@
           action="https://echo.htmlacademy.ru/"
           method="post"
     >
-      <label class="visually-hidden">
-        Укажите ваш email
-        <input
-          class="input-email"
-          type="email"
-          name="email-subscribe-form"
-          placeholder="Ваш e-mail"
-          required="required"
-        />
+      <label class="visually-hidden"
+             for="subscribe-form-input"
+      >Укажите ваш email
       </label>
+      <input
+        class="input-email"
+        type="email"
+        name="email-subscribe-form"
+        placeholder="Ваш e-mail"
+        required="required"
+        id="subscribe-form-input"
+      />
       <button class="button-all button-subscribe"
               type="submit"
       >
@@ -211,21 +213,21 @@
   <address class="social">
     <ul class="social-list">
       <li class="social-item">
-        <a class="social-link"
+        <a class="social-link-vk"
            href="https://vk.com/htmlacademy"
         >
           <span class="visually-hidden">Перейти в Вконтакте</span>
         </a>
       </li>
       <li class="social-item">
-        <a class="social-link"
+        <a class="social-link-telegram"
            href="https://t.me/htmlacademy"
         >
           <span class="visually-hidden">Перейти в Телеграм</span>
         </a>
       </li>
       <li class="social-item">
-        <a class="social-link"
+        <a class="social-link-youtube"
            href="https://www.youtube.com/user/htmlacademyru"
         >
           <span class="visually-hidden">Перейти в Ютуб</span>

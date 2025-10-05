@@ -14,13 +14,23 @@
   src: url("../fonts/ptsans-400.woff2") format("woff2");
 }
 
+html {
+  background-color: #F2F2F2;
+}
+
 body {
   background-color: #ffffff;
-  color: #000000;
+  color: #333333;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  width: 1200px;
+  margin: auto;
+}
+
+.page, .header-page, .footer-page {
+  background-color: #ffffff;
 }
 
 .navigation {
@@ -28,18 +38,16 @@ body {
   font-size: 20px;
   line-height: 24px;
   color: #000000;
-  background-color: #ffffff;
 }
 
 .navigation-link {
   text-decoration: none;
-  color: #000000;
-  background-color: #ffffff;
   text-align: center;
+  color: #000000;
 }
 
 .button-all {
-  text-decoration: none;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -47,16 +55,19 @@ body {
   background-color: #756157;
   border: none;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+.button-subscribe, .button-modal {
+  font-size: 20px;
+  line-height: 26px;
 }
 
 .button-reset {
   background-color: transparent;
 }
 
-.button-like {
-  background-color: #82B3D3;
-}
-
+.button-like,
 .catalog-page .button-subscribe {
   background-color: #82B3D3;
 }
@@ -66,77 +77,83 @@ body {
 }
 
 .hero {
-  background-image: url("../images/hero-background-image.jpg");
+  background-image: url("../images/hero-background-image-bottom.svg"),
+  url("../images/hero-background-image.jpg");
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: 100% auto, cover;
   text-align: center;
-  background-color: #000000;
+  background-color: #1f1960;
 }
 
-.advantages, .service, .booking, .subscribe {
+.advantages,
+.service,
+.booking,
+.subscribe {
   text-align: center;
   background-color: #ffffff;
 }
 
-.advantages-title, .service-title, .booking-title, .search-result-title {
+.advantages-title,
+.service-title,
+.booking-title,
+.search-result-title {
+  color: #000000;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.advantages-description, .service-description, .booking-description {
+.advantages-description,
+.service-description,
+.booking-description {
+  color: #000000;
   font-size: 22px;
   line-height: 26px;
   font-weight: 400;
 }
 
-.advantages-text-title, .service-text-title, .card-title {
+.advantages-text-title,
+.service-text-title,
+.card-title {
+  color: #000000;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.advantages-item:nth-child(1) .advantages-text {
-  background-color: #82B3D3;
-  color: #ffffff;
-}
-
-.advantages-item:nth-child(2) .advantages-text {
-  background-color: #83B3D31F;
-}
-
-.advantages-item:nth-child(3) .advantages-text {
-  background-color: #83B3D333;
-}
-
-.advantages-item:nth-child(4) .advantages-text {
-  background-color: #83B3D31F;
-}
-
+.advantages-item:nth-child(1) .advantages-text,
 .advantages-item:nth-child(5) .advantages-text {
   background-color: #82B3D3;
   color: #ffffff;
 }
 
-.service-item:nth-child(1) .service-text {
-  background-color: #83B3D333;
+.advantages-item:nth-child(2) .advantages-text,
+.advantages-item:nth-child(4) .advantages-text {
+  background-color: #83B3D31F;
 }
 
-.service-item:nth-child(3) .service-text {
+.advantages-item:nth-child(1) .advantages-text-title,
+.advantages-item:nth-child(5) .advantages-text-title {
+  color: #ffffff;
+}
+
+.service-item:nth-child(1) .service-text,
+.service-item:nth-child(3) .service-text,
+.advantages-item:nth-child(3) .advantages-text {
   background-color: #83B3D333;
 }
 
 .subscribe {
-  background-color: #000000;
+  background-color: #1f1960;
   background-image: url("../images/subscribe-background-image.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   color: #FFFFFF;
 }
 
 .social {
-  background-color: #ffffff;
   font-style: normal;
 }
 
@@ -146,10 +163,10 @@ body {
 }
 
 .catalog-page-header {
-  background-color: #000000;
   background-image: url("../images/background-catalog-image.jpg");
-  width: 100% auto;
+  background-size: cover;
   color: #ffffff;
+  background-color: #1f1960;
 }
 
 .catalog-page-title {
@@ -160,6 +177,7 @@ body {
 
 .breadcrumbs-link {
   font-size: 16px;
+  line-height: 21px;
 }
 
 .form-filter-group-title {
@@ -194,4 +212,24 @@ body {
 .catalog-page .subscribe {
   background: #ffffff;
   color: #000000;
+}
+
+.header-page .current-link {
+  border-bottom: 2px solid #756257;
+}
+
+#form-filter-input-min-price, #form-filter-input-max-price {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 24xp;
+  font-weight: 700;
+  color: #000000;
+}
+
+.select-filter {
+  font-family: "PT Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #333333
 }
